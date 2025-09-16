@@ -85,7 +85,7 @@
         <div class="col-md-10 mx-auto">
           <div class="row align-items-center flex-lg-row-reverse g-lg-5">
             <div class="col-md-6 text-center text-lg-start">
-              <img src="./Images/box-arrow-up-right_logosvg.svg" class="card-img-top" alt="About Me" />
+              <img src="./about2.jpg" class="card-img-top" alt="About Me" />
             </div>
             <div class="col-md-6 mx-auto col-lg-6">
               <h3 class="text-black fw-semibold">I'm Amithraj</h3>
@@ -103,7 +103,7 @@
 
               <form method="get" action="./Amithraj_Resume.pdf" target="_blank">
                 <button class="btn btn-lg text-white" type="submit" style="background-color:#3b67ce;">Download CV <img
-                    src="./images/download_fill_logosvg.svg" alt="Resume Download" width="22" height="22" /></button>
+                    src="./Images/download_fill_logosvg.svg" alt="Resume Download" width="22" height="22" /></button>
               </form>
             </div>
           </div>
@@ -449,68 +449,57 @@
 
 
   <!-- Contact -->
-  <div class="px-4 pt-5 my-5 text-center border-bottom" id="contact">
-    <h1 class="display-4 fw-bold text-body-emphasis">Connect Me</h1>
-    <div class="col-lg-12 mx-auto">
-      <p class="lead mb-4">I'd love to hear from you! If you have any questions, comments or,
-        feedback, please use the form below.</p>
+<div class="px-4 pt-5 my-5 text-center border-bottom" id="contact">
+  <h1 class="display-4 fw-bold text-body-emphasis">Connect Me</h1>
+  <div class="col-lg-12 mx-auto">
+    <p class="lead mb-4">
+      I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.
+    </p>
 
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        
+        <!-- Left: Image -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <img src="./Images/contact-logo.jpg" alt="Contact illustration" class="img-fluid rounded shadow-sm">
+        </div>
 
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-6 text-center text-lg-start">
-            <img src="./Images/contact-logo.jpg" alt="" class="card-img-top">
-          </div>
-          <div class="col-md-10 col-lg-6">
-            <form class="p-4 p-md-5 border rounded-3 bg-light">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <textarea type="text" class="form-control"  placeholder="Password">
-                <label for="floatingPassword">Enter your Message</label>
-              </textarea>
-              </div>
-              <div class="checkbox mb-3">
+        <!-- Right: Contact Form -->
+        <div class="col-md-10 col-lg-6">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            
+            <!-- Email -->
+            <div class="form-floating mb-3">
+              <input type="email" 
+                     class="form-control" 
+                     id="floatingEmail" 
+                     name="email" 
+                     placeholder="name@example.com" 
+                     required>
+              <label for="floatingEmail">Email address</label>
+            </div>
 
-              </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
-              <hr class="my-4">
-             
-            </form>
-          </div>
+            <!-- Message -->
+            <div class="form-floating mb-3">
+              <textarea class="form-control" 
+                        id="floatingMessage" 
+                        name="message"
+                        placeholder="Enter your message here..."
+                        style="height: 120px" 
+                        required></textarea>
+              <label for="floatingMessage">Enter your Message</label>
+            </div>
+
+            <!-- Submit -->
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+            <hr class="my-4">
+          </form>
         </div>
       </div>
-
-      <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        
-        <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start">
-            <img src="./ " class="card-img-top" />
-          </div>
-          <div class="col-md-6 col-lg-6 mx-auto ">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-              <div class="form-floating mb-3"> <input type="text" class="form-control" id="floatingInput"
-                  autocomplete="off" placeholder="Your Name"> <label for="floatingInput">Your Name</label> </div>
-              <div class="form-floating mb-3"> <input type="text" class="form-control" id="floatingPassword"
-                  autocomplete="off" placeholder="Your Email"> <label for="floatingPassword">Your Email</label> </div>
-
-              <div class="form-floating mb-3">
-                <textarea class="form-control" id="floatingMessage" autocomplete="off" placeholder="Your Message"
-                  style="height: 120px"></textarea>
-                <label for="floatingMessage">Your Message</label>
-              </div>
-
-              <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
-
-
-            </form>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
+</div>
+
 
 
 
