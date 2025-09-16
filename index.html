@@ -14,11 +14,39 @@
     overflow-x: hidden;
   }
 </style> -->
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .fadeInUp {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.1s;
+    visibility: visible;
+  }
+
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+</style>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #3b67ce">
     <div class="container-fluid">
-      <img src="./Images/javascript_logosvg.svg" class="" style="width: 20px; height: 20px;" />
+      <img src="./icon.png" class="" style="width: 30px; height: 30px;" />
 
       <!-- Toggler Button (Hamburger for mobile) -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -28,143 +56,155 @@
 
       <!-- Collapsible Nav Items -->
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
+        <div class="navbar-nav ms-auto text-white p-2 px-4">
           <a class="nav-link active fw-bold bg-white rounded-3" aria-current="page" href="#">Home</a>
-          <a class="nav-link fw-bold" href="#about">Aboutme</a>
-          <a class="nav-link fw-bold" href="#experience">Experience</a>
-          <a class="nav-link fw-bold" href="#skills">Skills</a>
-          <a class="nav-link fw-bold" href="#projects">Projects</a>
-          <a class="nav-link fw-bold" href="#contact">Contact</a>
+          <a class="nav-link fw-bold text-white" href="#about">Aboutme</a>
+          <a class="nav-link fw-bold text-white" href="#experience">Experience</a>
+          <a class="nav-link fw-bold text-white" href="#skills">Skills</a>
+          <a class="nav-link fw-bold text-white" href="#projects">Projects</a>
+          <a class="nav-link fw-bold text-white" href="#contact">Contact</a>
           <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
         </div>
       </div>
     </div>
   </nav>
 
-
-  <main>
-    <div class="py-5">
-      <div class="col-md-10 mx-auto">
-        <div class="row align-items-center flex g-lg-5">
-          <div class="col-md-6 text-center text-lg-start">
-            <img src="./0535045.png" class="card-img-top" alt="About Me" />
-          </div>
-          <div class="col-md-6 mx-auto col-lg-6">
-            <h3 class="text-black fw-semibold">Hey <span style="color: #3b67ce;">There</span></h3>
-
-            <p class="fs-5 mb-2"> Iam Engineer at heart, developer by passion — creating efficient web applications
-              and
-              solving real-world challenges. Explore my work below." </p>
-            <button class="btn btn-lg text-white" style="background-color:#3b67ce;"
-              onclick="scrollToOptions('about')">About Me
-              <img src="./Images/download_fill_logosvg.svg" alt="About-me"
-                style="width: 20px; height: 20px;" /></button>
-            <div>
-              <a href=".https://github.com/Amith501/"><img src="./Images/github_logosvg.svg" class="m-2" style="width: 40px; height: 40px; " /> </a>
-              <a href="https://www.linkedin.com/in/amith-raj-64a693218/"><img src="./Images/linkedin_logosvg.svg" style="width: 40px; height: 40px;" /></a>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
+<main class="container py-5">
+  <div class="row align-items-center g-5">
+    
+    <!-- Left: Image -->
+    <div class="col-md-6 text-center">
+      <img src="./0535045.png" class="img-fluid rounded shadow" alt="About Me" />
     </div>
-    <div>
 
+    <!-- Right: Text Content -->
+    <div class="col-md-6">
+     <h3 class="fw-semibold text-black">
+  Hey <span style="color: #3b67ce;">There</span><br>
+   I'm <span style="color:#3b67ce;">Amith</span>
+</h3>
+
+      <p class="fs-5 mb-4">
+        I am Engineer at heart, developer by passion — creating efficient web applications
+        and solving real-world challenges. Explore my work below.
+      </p>
+
+      <!-- Button -->
+      <button class="btn btn-lg text-white mb-3" style="background-color:#3b67ce;"
+        onclick="scrollToOptions('about')">
+        About Me
+        <img src="./Images/download_fill_logosvg.svg" alt="About-me"
+          style="width: 20px; height: 20px; margin-left: 5px;" />
+      </button>
+
+      <!-- Social Links -->
+      <ul class="d-flex list-unstyled mt-3">
+        <li>
+          <a href="https://github.com/Amith501/" target="_blank">
+            <img src="./Images/github_logosvg.svg" class="m-2" style="width: 40px; height: 40px;" alt="GitHub" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/amith-raj-64a693218/" target="_blank">
+            <img src="./Images/linkedin_logosvg.svg" class="m-2" style="width: 40px; height: 40px;" alt="LinkedIn" />
+          </a>
+        </li>
+      </ul>
     </div>
-  </main>
+  </div>
+</main>
+>
 
 
   <!-- About Section -->
-  <section id="about" class="container-fluid">
-    <div class="text- px-2">
-      <div class="py-5">
-        <h1 class="display-5 fw-bold text-black text-center">About <span style="color: #3b67ce;">Me</span></h1>
-        <div class="col-md-10 mx-auto">
-          <div class="row align-items-center flex-lg-row-reverse g-lg-5">
-            <div class="col-md-6 text-center text-lg-start">
-              <img src="./about2.jpg" class="card-img-top" alt="About Me" />
-            </div>
-            <div class="col-md-6 mx-auto col-lg-6">
-              <h3 class="text-black fw-semibold">I'm Amithraj</h3>
-              <p class="fw-bold fs-5 text-black">Full Stack Developer</p>
-              <p class="fs-5 mb-4">As a Full-Stack Developer from Warangal, India with a Computer Science background,
-                I focus on creating impactful digital experiences. I am passionate about coding,
-                optimizing performance, and delivering user-friendly web applications powered by the MERN stack.
-                "Learning by building — passionate about Full-Stack development and creating impactful projects." </p>
-              <p class="fs-5 mb-4"><span style="color: #3b67ce" class="fw-bold">Email :
-                </span>amithbachuwal@gmail.com
-              </p>
-              <p class="fs-5 mb-4"><span style="color: #3b67ce;" class="fw-bold">Place : </span>Warangal,
-                India - 506002
-              </p>
+ <section id="about" class="container-fluid py-5">
+  <h1 class="display-5 fw-bold text-black text-center mb-5">
+    About <span style="color: #3b67ce;">Me</span>
+  </h1>
 
-              <form method="get" action="./Amithraj_Resume.pdf" target="_blank">
-                <button class="btn btn-lg text-white" type="submit" style="background-color:#3b67ce;">Download CV <img
-                    src="./Images/download_fill_logosvg.svg" alt="Resume Download" width="22" height="22" /></button>
-              </form>
-            </div>
-          </div>
-        </div>
-
+  <div class="col-md-10 mx-auto">
+    <div class="row align-items-center flex-lg-row-reverse g-5">
+      
+      <!-- Image -->
+      <div class="col-md-6 text-center">
+        <img src="./about2.jpg" class="img-fluid rounded shadow-sm" alt="About Me" />
       </div>
-  </section>>
+      
+      <!-- Content -->
+      <div class="col-md-6">
+        <h3 class="fw-semibold text-black">I'm <span style="color:#3b67ce;">Amithraj</span></h3>
+        <p class="fw-bold fs-5 text-secondary">Full Stack Developer</p>
+        
+        <p class="fs-5 mb-4">
+          As a <strong>Full-Stack Developer</strong> from Warangal, India with a Computer Science background, 
+          I specialize in creating <strong>impactful digital experiences</strong>.  
+          Passionate about coding, performance optimization, and building user-friendly web applications 
+          powered by the <strong>MERN stack</strong>.  
+          I believe in <em>"learning by building"</em> and love creating projects that make a difference. 
+        </p>
 
+        <p class="fs-5 mb-2">
+          <span style="color: #3b67ce;" class="fw-bold">Email:</span> a@gmail.com
+        </p>
+        <p class="fs-5 mb-4">
+          <span style="color: #3b67ce;" class="fw-bold">Place:</span> Warangal, India – 506002
+        </p>
 
-  <section id="experience" class="container my-5">
-    <h2 class="display-5 fw-bold  text-center" style="color: #3b67ce;">Experience</h2>
-    <div class="row p-2">
-
-      <!-- Job 1 -->
-      <div class="col-12 mb-4">
-        <div class="card shadow-sm p-4 rounded-3">
-          <div class="row align-items-center">
-
-            <!-- Text Content -->
-            <div class="col-md-8 p-2">
-              <h4 class="texr-success">Full Stack Developer <span class="text-dark
-
-">– Itskillarena
-                  Organization</span></h4>
-              <p class="text-muted">Warangal, India | April 2022 – Present</p>
-              <ul>
-                <li>Developed a <strong>Vehicle Service Booking Platform</strong> using <strong>React.js, Node.js, and
-                    SQL</strong>.</li>
-                <li>Optimized frontend performance, reducing load times by <strong>35%</strong>.</li>
-                <li>Implemented secure <strong>JWT authentication & role-based access</strong>.</li>
-                <li>Built and customized <strong>WordPress websites</strong> with Elementor and popular themes to
-                  enhance UI/UX.</li>
-
-                <li> Configured and integrated plugins: Clone (page duplication),Duplicator (site
-                  migration),Google Analytics, SEO tools, sitemap generators, navigation plugins.</li>
-
-                <li> Conducted manual testing on a live <strong>CakePHP application,</strong> identifying bugs,
-                  validating workflows, and ensuring a smooth user experience
-                  .</li>
-
-                <li> Developed a role-based <strong>Training Institute Management System</strong> (Admin, Super
-                  Admin, Faculty, Student) using PHP & MySQL, featuring secure authentication, user
-                  management, and streamlined workflows
-                  .</li>
-                <!-- 
-                <li> Configured and integrated plugins: Clone (page duplication),Duplicator (site
-                  migration),Google Analytics, SEO tools, sitemap generators, navigation plugins.</li> -->
-              </ul>
-            </div>
-
-            <!-- Image -->
-            <div class="col-md-4 text-center">
-              <img src="./Images/experiance.jpg" alt="image" class="img-fluid rounded shadow-sm" />
-            </div>
-
-          </div>
-        </div>
+        <a href="./" target="_blank" class="btn btn-lg text-white" style="background-color:#3b67ce;">
+          Download CV 
+          <img src="./Images/download_fill_logosvg.svg" alt="Resume Download" width="22" height="22" class="ms-2" />
+        </a>
       </div>
-
     </div>
-  </section>
+  </div>
+</section>
+>
+
+  <!-- experiance -->
+ <section id="experience" class="container my-5">
+  <h2 class="display-5 fw-bold text-center" style="color: #3b67ce;">Experience</h2>
+  
+  <div class="row p-2">
+
+    <!-- Job 1 -->
+    <div class="col-12 mb-4">
+      <div class="card shadow-sm p-4 rounded-3">
+        <div class="row align-items-center">
+
+          <!-- Text Content -->
+          <div class="col-md-8 p-2">
+            <h4 class="text-primary mb-3">
+              Full Stack Developer 
+              <span class="text-dark">– Itskillarena Organization</span>
+            </h4>
+            <p class="text-muted">
+              Warangal, India 
+              <span class="badge bg-primary ms-2">Apr 2022 – Present</span>
+            </p>
+
+            <ul>
+              <li>Developed a <strong>Vehicle Service Booking Platform</strong> using <strong>React.js, Node.js, and SQL</strong>.</li>
+              <li>Optimized frontend performance, reducing load times by <strong>35%</strong>.</li>
+              <li>Implemented secure <strong>JWT authentication & role-based access</strong>.</li>
+              <li>Built and customized <strong>WordPress websites</strong> with Elementor and popular themes to enhance UI/UX.</li>
+              <li>Configured and integrated essential plugins: <strong>Clone</strong>, <strong>Duplicator</strong>, <strong>Google Analytics</strong>, SEO tools, sitemap generators, and navigation plugins.</li>
+              <li>Conducted manual testing on a live <strong>CakePHP application</strong>, identifying bugs, validating workflows, and ensuring a smooth user experience.</li>
+              <li>Developed a role-based <strong>Training Institute Management System</strong> (Admin, Super Admin, Faculty, Student) using <strong>PHP & MySQL</strong>, with secure authentication, user management, and streamlined workflows.</li>
+            </ul>
+          </div>
+
+          <!-- Image -->
+          <div class="col-md-4 text-center">
+            <img src="./Images/experiance.jpg" alt="Experience" class="img-fluid rounded shadow-sm w-75" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 
   <!-- Skills -->
@@ -363,93 +403,104 @@
 
 
   <!-- MYProjects -->
-  <div class="container my-5" id="#projects">
-    <h2 class="pb-2 border-bottom fw-bold text-center">Projects</h2>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+  <section>
+    <div class="container my-5 d-" id="#projects">
+      <h2 class="display-5 fw-bold pb-2 border-bottom fw-bold text-center">Projects</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-      <!-- Project 1 -->
-      <div class="col">
-        <div class="card shadow-sm h-100">
-          <img src="./Images/mern.png" class="card-img-top" alt="React Project" height="200">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Mern Ecommerce</h5>
-            <p>Built a full-stack e-commerce application using the MERN stack (MongoDB, Express.js, React.js, Node.js)
-              with features like product CRUD, authentication/authorization, cart & order management, and user profile.
-              Integrated Razorpay payment gateway</p>
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 fadeInUp">
+          <div class="card shadow-sm h-100 border-0 rounded-3 overflow-hidden project-card">
 
-            <div class="mt-auto d-flex justify-content-between align-items-center">
-              <a href="#" class="btn btn-sm btn-primary">View</a>
-              <a href="#" class="btn btn-sm btn-outline-dark">Code</a>
+            <!-- Project Image -->
+            <div class="overflow-hidden">
+              <img src="./Images/mern.png" class="card-img-top img-hover" alt="MERN Project" height="200">
+            </div>
+
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-primary">MERN E-Commerce</h5>
+
+
+              <div class="mb-2">
+                <span class="badge bg-dark">MongoDB</span>
+                <span class="badge bg-success">Express</span>
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-warning text-dark">Node.js</span>
+              </div>
+
+              <p class="card-text">
+                Full-stack e-commerce app with product CRUD, authentication, cart & order
+                management, and Razorpay payment gateway integration.
+              </p>
+
+              <!-- Buttons -->
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-sm btn-primary">
+                  🔗 View
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-dark">
+                  💻 Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col">
+          <div class="card shadow-sm h-100 border-0 rounded-3 overflow-hidden project-card">
 
-      <div class="col">
-        <div class="card shadow-sm h-100">
-          <img src="./Images/nextjsprojects.png" class="card-img-top" alt="React Project" height="200">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Blog Application</h5>
-            <p>Developed blog system with admin access to create/delete blogs, and user email subscriptions.
+            <!-- Project Image -->
+            <div class="overflow-hidden">
+              <img src="./Images/nextjsprojects.png" class="card-img-top img-hover" alt="MERN Project" height="200">
+            </div>
 
-              App supports users to view blogs, subscribe with their user email ID.</p>
-            <div class="mt-auto d-flex justify-content-between align-items-center">
-              <a href="#" class="btn btn-sm btn-primary">View</a>
-              <a href="#" class="btn btn-sm btn-outline-dark">Code</a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-primary">Blog Application</h5>
+
+
+              <div class="mb-2">
+                <span class="badge bg-dark">MongoDB</span>
+                <span class="badge bg-success">Express</span>
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-warning text-dark">Node.js</span>
+              </div>
+
+              <p class="card-text">
+                Developed blog system with admin access to create/delete blogs, and user email subscriptions.
+                App supports users to view blogs, subscribe with their user email ID.
+
+              </p>
+
+              <!-- Buttons -->
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-sm btn-primary">
+                  🔗 View
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-dark">
+                  💻 Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
       </div>
-
-      <div class="col">
-        <div class="card shadow-sm h-100">
-          <img src="./Images/mern.png" class="card-img-top" alt="React Project" height="200">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Mern</h5>
-
-            <div class="mt-auto d-flex justify-content-between align-items-center">
-              <a href="#" class="btn btn-sm btn-primary">View</a>
-              <a href="#" class="btn btn-sm btn-outline-dark">Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col">
-        <div class="card shadow-sm h-100">
-          <img src="./Images/javascriptproject.png" class="card-img-top" alt="React Project" height="200">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">JavaScript</h5>
-
-            <div class="mt-auto d-flex justify-content-between align-items-center">
-              <a href="#" class="btn btn-sm btn-primary">View</a>
-              <a href="#" class="btn btn-sm btn-outline-dark">Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm h-100">
-          <img src="./Images/nextjsprojects.png" class="card-img-top" alt="React Project" height="200">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Next.js</h5>
-
-            <div class="mt-auto d-flex justify-content-between align-items-center">
-              <a href="#" class="btn btn-sm btn-primary">View</a>
-              <a href="#" class="btn btn-sm btn-outline-dark">Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
+
+
+  </section>
+
 
 
   <!-- Contact -->
-<div class="px-4 pt-5 my-5 text-center border-bottom" id="contact">
+<div class="px-4 pt-5 my-5 text-center border-bottom contact-section" id="contact">
   <h1 class="display-4 fw-bold text-body-emphasis">Connect Me</h1>
   <div class="col-lg-12 mx-auto">
     <p class="lead mb-4">
@@ -458,35 +509,27 @@
 
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row align-items-center g-lg-5 py-5">
-        
+
         <!-- Left: Image -->
-        <div class="col-lg-6 text-center text-lg-start">
-          <img src="./Images/contact-logo.jpg" alt="Contact illustration" class="img-fluid rounded shadow-sm">
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+          <img src="./Images/contact-logo.jpg" alt="Contact illustration" 
+               class="img-fluid rounded shadow-sm">
         </div>
 
         <!-- Right: Contact Form -->
         <div class="col-md-10 col-lg-6">
-          <form class="p-4 p-md-5 border rounded-3 bg-light">
+          <form class="p-4 p-md-5 border rounded-3 bg-light shadow-sm">
             
             <!-- Email -->
             <div class="form-floating mb-3">
-              <input type="email" 
-                     class="form-control" 
-                     id="floatingEmail" 
-                     name="email" 
-                     placeholder="name@example.com" 
-                     required>
+              <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="name@example.com" required>
               <label for="floatingEmail">Email address</label>
             </div>
 
             <!-- Message -->
             <div class="form-floating mb-3">
-              <textarea class="form-control" 
-                        id="floatingMessage" 
-                        name="message"
-                        placeholder="Enter your message here..."
-                        style="height: 120px" 
-                        required></textarea>
+              <textarea class="form-control" id="floatingMessage" name="message"
+                        placeholder="Enter your message here..." style="height: 120px" required></textarea>
               <label for="floatingMessage">Enter your Message</label>
             </div>
 
@@ -495,10 +538,12 @@
             <hr class="my-4">
           </form>
         </div>
+
       </div>
     </div>
   </div>
 </div>
+
 
 
 
@@ -520,15 +565,15 @@
         <div class="col-lg-4 mb-3">
           <h5 class="fw-bold">Contact Info</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"> +91 9581162166</li>
+            <li class="mb-2"><span><img src="./Images/telephone.svg" alt=""></span> +91 9581162166</li>
             <li class="mb-2"> amithbachuwal@gmail.com</li>
-            <li class="mb-2"> Telangana, Warangal</li>
+            <li class="mb-2"> <span><img src="./Images/location.svg"></span>Telangana, Warangal</li>
           </ul>
         </div>
       </div>
       <div
         class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-lg-4 mt-4 border-top border-secondary">
-        <p class="mb-0 ">© 2025 Amith Raj. All rights reserved.</p>
+        <p class="mb-0 ">2025 Amith Raj.</p>
       </div>
     </div>
   </footer>
