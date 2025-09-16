@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<style>
+<!-- <style>
   html,
   body {
     overflow-x: hidden;
   }
-</style>
+</style> -->
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-#3b67c">
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #3b67ce">
     <div class="container-fluid">
       <img src="./Images/javascript_logosvg.svg" class="" style="width: 20px; height: 20px;" />
 
@@ -29,99 +29,90 @@
       <!-- Collapsible Nav Items -->
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#about">Aboutme</a>
-          <a class="nav-link" href="#">Projects</a>
-          <a class="nav-link" href="#">Skills</a>
-          <a class="nav-link" href="#">Experience</a>
+          <a class="nav-link active fw-bold bg-white rounded-3" aria-current="page" href="#">Home</a>
+          <a class="nav-link fw-bold" href="#about">Aboutme</a>
+          <a class="nav-link fw-bold" href="#experience">Experience</a>
+          <a class="nav-link fw-bold" href="#skills">Skills</a>
+          <a class="nav-link fw-bold" href="#projects">Projects</a>
+          <a class="nav-link fw-bold" href="#contact">Contact</a>
           <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
         </div>
       </div>
     </div>
   </nav>
 
-<section>
-  <main>
 
-<div class="py-5">
-                <h1 class="display-5 fw-bold text-black text-center">About <span style="color: #3b67ce;">Me</span></h1>
-                <div class="col-md-10 mx-auto">
-                    <div class="row align-items-center flex g-lg-5">
-                        <div class="col-md-6 text-center text-lg-start">
-                            <img src="./0535045.png" class="card-img-top" alt="About Me" />
-                        </div>
-                        <div class="col-md-6 mx-auto col-lg-6">
-                            <h3 class="text-black fw-semibold">Hey There</h3>
-                           
-                            <p class="fs-5 mb-4">Engineer at heart, developer by passion — creating efficient web applications and solving real-world challenges. Explore my work below." </p>
-                                                           <button class="btn btn-lg text-white"
-                                    style="background-color:#3b67ce;">About Me<img
-                                        src="./images/download_fill_logosvg.svg" alt="About-me" width="22"
-                                        height="22" /></button> 
- <img src="./Images/git_logosvg.svg"  />
-                                        <img src="./Images/linkedin_logosvg.svg"  />
-                            
-                        </div>
-                        
-                    </div>
-                </div>
+  <main>
+    <div class="py-5">
+      <div class="col-md-10 mx-auto">
+        <div class="row align-items-center flex g-lg-5">
+          <div class="col-md-6 text-center text-lg-start">
+            <img src="./0535045.png" class="card-img-top" alt="About Me" />
+          </div>
+          <div class="col-md-6 mx-auto col-lg-6">
+            <h3 class="text-black fw-semibold">Hey <span style="color: #3b67ce;">There</span></h3>
+
+            <p class="fs-5 mb-2"> Iam Engineer at heart, developer by passion — creating efficient web applications
+              and
+              solving real-world challenges. Explore my work below." </p>
+            <button class="btn btn-lg text-white" style="background-color:#3b67ce;"
+              onclick="scrollToOptions('about')">About Me
+              <img src="./images/download_fill_logosvg.svg" alt="About-me"
+                style="width: 20px; height: 20px;" /></button>
+            <div>
+              <img src="./Images/github_logosvg.svg" class="m-2" style="width: 40px; height: 40px; " />
+              <img src="./Images/linkedin_logosvg.svg" style="width: 40px; height: 40px;" />
 
             </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
     <div>
-      
+
     </div>
   </main>
-</section>
+
+
   <!-- About Section -->
   <section id="about" class="container-fluid">
-        <div class="text- px-2">
-            <div class="py-5">
-                <h1 class="display-5 fw-bold text-black text-center">About <span style="color: #3b67ce;">Me</span></h1>
-                <div class="col-md-10 mx-auto">
-                    <div class="row align-items-center flex-lg-row-reverse g-lg-5">
-                        <div class="col-md-6 text-center text-lg-start">
-                            <img src="./about2.jpg" class="card-img-top" alt="About Me" />
-                        </div>
-                        <div class="col-md-6 mx-auto col-lg-6">
-                            <h3 class="text-black fw-semibold">I'm Amithraj</h3>
-                            <p class="fw-bold fs-5 text-black">Full Stack Developer</p>
-                            <p class="fs-5 mb-4">As a Full-Stack Developer from Warangal, India with a Computer Science background, 
-I focus on creating impactful digital experiences. I am passionate about coding, 
-optimizing performance, and delivering user-friendly web applications powered by the MERN stack.
-                                "Learning by building — passionate about Full-Stack development and creating impactful projects." </p>
-                            <p class="fs-5 mb-4"><span style="color: #3b67ce" class="fw-bold">Email :
-                                </span>amithbachuwal@gmail.com
-                            </p>
-                            <p class="fs-5 mb-4"><span style="color: #3b67ce;" class="fw-bold">Place : </span>Warangal,
-                                India - 506002
-                            </p>
-
-                            <form method="get" action="./Nandakishore_Resume.pdf" target="_blank">
-                                <button class="btn btn-lg text-white" type="submit"
-                                    style="background-color:#3b67ce;">Download CV <img
-                                        src="./images/download_fill_logosvg.svg" alt="Resume Download" width="22"
-                                        height="22" /></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
+    <div class="text- px-2">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-black text-center">About <span style="color: #3b67ce;">Me</span></h1>
+        <div class="col-md-10 mx-auto">
+          <div class="row align-items-center flex-lg-row-reverse g-lg-5">
+            <div class="col-md-6 text-center text-lg-start">
+              <img src="./about2.jpg" class="card-img-top" alt="About Me" />
             </div>
-    </section>>
+            <div class="col-md-6 mx-auto col-lg-6">
+              <h3 class="text-black fw-semibold">I'm Amithraj</h3>
+              <p class="fw-bold fs-5 text-black">Full Stack Developer</p>
+              <p class="fs-5 mb-4">As a Full-Stack Developer from Warangal, India with a Computer Science background,
+                I focus on creating impactful digital experiences. I am passionate about coding,
+                optimizing performance, and delivering user-friendly web applications powered by the MERN stack.
+                "Learning by building — passionate about Full-Stack development and creating impactful projects." </p>
+              <p class="fs-5 mb-4"><span style="color: #3b67ce" class="fw-bold">Email :
+                </span>amithbachuwal@gmail.com
+              </p>
+              <p class="fs-5 mb-4"><span style="color: #3b67ce;" class="fw-bold">Place : </span>Warangal,
+                India - 506002
+              </p>
+
+              <form method="get" action="./Amithraj_Resume.pdf" target="_blank">
+                <button class="btn btn-lg text-white" type="submit" style="background-color:#3b67ce;">Download CV <img
+                    src="./images/download_fill_logosvg.svg" alt="Resume Download" width="22" height="22" /></button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>>
 
 
-  <!-- <div class="aboutme" id="about">
-    <div class="m-3 text-center">
-      <h2 class="fw-bold">About Me</h2>
-      <p class="text-muted px-3">
-        I’m a dedicated and results-driven <span class="fw-semibold text-primary">Full-Stack Developer</span> with 2.5+
-        years of experience
-        building scalable applications. Skilled in crafting responsive UIs,
-        developing secure REST APIs, and delivering modern web solutions using React, Next.js, and the MERN stack.
-      </p>
-    </div>
-  </div> -->
- 
   <section id="experience" class="container my-5">
     <h2 class="display-5 fw-bold  text-center" style="color: #3b67ce;">Experience</h2>
     <div class="row p-2">
@@ -176,220 +167,203 @@ optimizing performance, and delivering user-friendly web applications powered by
   </section>
 
 
-
   <!-- Skills -->
-<section id="skills" class="container-fluid my-5">
-        <div class="py-lg-5 pt-5 container">
-            <h1 class="display-5 fw-bold text-black text-center"><span style="color:#3b67ce">Skills</span></h1>
-            <div class="bd-example-snippet bd-code-snippet">
-                <div class="bd-example m-0 border-0 py-5 text-center">
-                    <nav class="d-flex justify-content-center py-3">
-                        <div class="nav nav-tabs mb-3 " id="nav-tab" role="tablist">
-                            <button class="nav-link skill-link active fw-bold px-lg-5" id="nav-home-tab"
-                                data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
-                                aria-controls="nav-home" aria-selected="true" tabindex="-1">Front-End</button>
-                            <button class="nav-link skill-link fw-bold px-lg-5" id="nav-profile-tab"
-                                data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
-                                aria-controls="nav-profile" aria-selected="false" tabindex="-1">Back-End</button>
-                            <button class="nav-link skill-link fw-bold px-lg-5" id="nav-contact-tab"
-                                data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
-                                aria-controls="nav-contact" aria-selected="false">Tool</button>
-                        </div>
-                    </nav>
-                    <div class="tab-content py-5" id="nav-tabContent">
-                        <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
-                            aria-labelledby="nav-home-tab">
-                            <div class="row row-cols-1 row-cols-sm-6 g-4">
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/react_logosvg.svg" alt="React Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">React JS</h4>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/javascript_logosvg.svg" alt="JavaScript Logo" width="40"
-                                            height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">JavaScript</h4>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/typescript_logosvg.svg" alt="TypeScript Logo" width="40"
-                                            height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">TypeScript</h4>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/redux_logosvg.svg" alt="HTML Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Redux</h4>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/css_logosvg.svg" alt="CSS Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">CSS</h4>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/html_logosvg.svg" alt="Bootstrap Logo" width="40"
-                                            height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Html</h4>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/tailwind_logosvg.svg" alt="Redux Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Tailwind Css</h4>
-                                    </p>
-                                </div>
-
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/bootstrap_logosvg.svg" alt="Ant Design Logo" width="40"
-                                            height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Bootstrap</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/tailwind_logo.svg" alt="Tailwind Logo" width="40"
-                                            height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Tailwind CSS</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/nextJS_logosvg.svg" alt="Next JS Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Next JS</h4>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <div class="row row-cols-1 row-cols-sm-6 g-4" id="idSkill">
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/expressjs_logosvg.svg" alt="Express Js Logo" width="40"
-                                            height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Express JS</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/MongoDB_logosvg.svg" alt="Next JS Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Mongo DB</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/prisma-svgrepo-com.svg" alt="Next JS Logo" width="40"
-                                            height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Prisma</h4>
-                                    </p>
-                                </div>
-
-                                 <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/mysql-logo-svgrepo-com.svg" alt="Next JS Logo" width="40"
-                                            height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Mysql</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/nodejs_logosvg.svg" alt="Next JS Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Node JS</h4>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <div class="row row-cols-1 row-cols-sm-6 g-4" id="idSkill">
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/git_logo.svg" alt="Git Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Git VCS</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/github_logo.svg" alt="GitHub Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">GitHub</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/figma_logo.svg" alt="Next JS Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Figma</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/postman_logo.svg" alt="Next JS Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Postman</h4>
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
-                                    <div
-                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
-                                        <img src="./images/docker.svg" alt="Next JS Logo" width="40" height="40">
-                                    </div>
-                                    <h4 class="fw-semibold mb-0 text-body-emphasis">Docker</h4>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <section id="skills" class="container-fluid my-5">
+    <div class="py-lg-5 pt-5 container">
+      <h1 class="display-5 fw-bold text-black text-center"><span style="color:#3b67ce">Skills</span></h1>
+      <div class="bd-example-snippet bd-code-snippet">
+        <div class="bd-example m-0 border-0 py-5 text-center">
+          <nav class="d-flex justify-content-center py-3">
+            <div class="nav nav-tabs mb-3 " id="nav-tab" role="tablist">
+              <button class="nav-link skill-link active fw-bold px-lg-5" id="nav-home-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"
+                tabindex="-1">Front-End</button>
+              <button class="nav-link skill-link fw-bold px-lg-5" id="nav-profile-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"
+                tabindex="-1">Back-End</button>
+              <button class="nav-link skill-link fw-bold px-lg-5" id="nav-contact-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                aria-selected="false">Testing & Tools</button>
             </div>
+          </nav>
+          <div class="tab-content py-5" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="row row-cols-1 row-cols-sm-6 g-4">
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/react_logosvg.svg" alt="React Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">React JS</h4>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/javascript_logosvg.svg" alt="JavaScript Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">JavaScript</h4>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/typescript_logosvg.svg" alt="TypeScript Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">TypeScript</h4>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/redux_logosvg.svg" alt="HTML Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Redux</h4>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/css_logosvg.svg" alt="CSS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">CSS</h4>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/html_logosvg.svg" alt="Bootstrap Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Html</h4>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/tailwind_logosvg.svg" alt="Redux Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Tailwind Css</h4>
+                  </p>
+                </div>
+
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/bootstrap_logosvg.svg" alt="Ant Design Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Bootstrap</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/azurepipelines-svgrepo-com.svg" alt="Tailwind Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis"> Devops(Ci/Cd)</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/nextJS_logosvg.svg" alt="Next JS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Next JS</h4>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="row row-cols-1 row-cols-sm-6 g-4" id="idSkill">
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/expressjs_logosvg.svg" alt="Express Js Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Express JS</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/MongoDB_logosvg.svg" alt="Next JS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Mongo DB</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/prisma-svgrepo-com.svg" alt="Next JS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Prisma</h4>
+                  </p>
+                </div>
+
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/mysql-logo-svgrepo-com.svg" alt="Next JS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Mysql</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/nodejs_logosvg.svg" alt="Next JS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Node JS</h4>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="row row-cols-1 row-cols-sm-6 g-4" id="idSkill">
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/git_logosvg.svg" alt="Git Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Git VCS</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/github_logosvg.svg" alt="GitHub Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">GitHub</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./Jest.svg" alt="Next JS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">ReactTesting</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/postman_logosvg.svg" alt="Next JS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Postman</h4>
+                  </p>
+                </div>
+                <div class="col-lg-2 col-6 d-flex flex-column gap-2 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
+                    <img src="./images/docker.svg" alt="Next JS Logo" width="40" height="40">
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Docker</h4>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-
-
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- MYProjects -->
-  <div class="container my-5">
+  <div class="container my-5" id="#projects">
     <h2 class="pb-2 border-bottom fw-bold text-center">Projects</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
@@ -398,7 +372,10 @@ optimizing performance, and delivering user-friendly web applications powered by
         <div class="card shadow-sm h-100">
           <img src="./Images/mern.png" class="card-img-top" alt="React Project" height="200">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Mern</h5>
+            <h5 class="card-title">Mern Ecommerce</h5>
+            <p>Built a full-stack e-commerce application using the MERN stack (MongoDB, Express.js, React.js, Node.js)
+              with features like product CRUD, authentication/authorization, cart & order management, and user profile.
+              Integrated Razorpay payment gateway</p>
 
             <div class="mt-auto d-flex justify-content-between align-items-center">
               <a href="#" class="btn btn-sm btn-primary">View</a>
@@ -410,10 +387,12 @@ optimizing performance, and delivering user-friendly web applications powered by
 
       <div class="col">
         <div class="card shadow-sm h-100">
-          <img src="./Images/mern.png" class="card-img-top" alt="React Project" height="200">
+          <img src="./Images/nextjsprojects.png" class="card-img-top" alt="React Project" height="200">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Mern</h5>
+            <h5 class="card-title">Blog Application</h5>
+            <p>Developed blog system with admin access to create/delete blogs, and user email subscriptions.
 
+              App supports users to view blogs, subscribe with their user email ID.</p>
             <div class="mt-auto d-flex justify-content-between align-items-center">
               <a href="#" class="btn btn-sm btn-primary">View</a>
               <a href="#" class="btn btn-sm btn-outline-dark">Code</a>
@@ -465,31 +444,53 @@ optimizing performance, and delivering user-friendly web applications powered by
         </div>
       </div>
 
-</div>
-</div>
-
-
     </div>
   </div>
-  </div>
-
-
 
 
   <!-- Contact -->
-
-
-  <div class="px-4 pt-5 my-5 text-center border-bottom">
+  <div class="px-4 pt-5 my-5 text-center border-bottom" id="contact">
     <h1 class="display-4 fw-bold text-body-emphasis">Connect Me</h1>
     <div class="col-lg-12 mx-auto">
       <p class="lead mb-4">I'd love to hear from you! If you have any questions, comments or,
         feedback, please use the form below.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <img src="./Images/contact-logo.jpg" alt="" class="card-img-top">
+          </div>
+          <div class="col-md-10 col-lg-6">
+            <form class="p-4 p-md-5 border rounded-3 bg-light">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+              <hr class="my-4">
+              <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-lg-7 text-center text-lg-start">
-            <img src="./public/contact.png " class="card-img-top" />
+            <img src="./ " class="card-img-top" />
           </div>
-          <div class="col-md-6 mx-auto col-lg-5">
+          <div class="col-md-6 col-lg-6 mx-auto ">
             <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
               <div class="form-floating mb-3"> <input type="text" class="form-control" id="floatingInput"
                   autocomplete="off" placeholder="Your Name"> <label for="floatingInput">Your Name</label> </div>
@@ -508,13 +509,14 @@ optimizing performance, and delivering user-friendly web applications powered by
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
 
+
   <footer class="container-fluid bg-dark text-white rounded-3 shadow-lg">
-    <div class="py-5">
+    <div class="pt-5">
       <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4 px-lg-5 px-2">
 
         <!-- About -->
@@ -535,12 +537,7 @@ optimizing performance, and delivering user-friendly web applications powered by
             <li class="mb-2"> Telangana, Warangal</li>
           </ul>
         </div>
-
-
-
       </div>
-
-
       <div
         class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-lg-4 mt-4 border-top border-secondary">
         <p class="mb-0 ">© 2025 Amith Raj. All rights reserved.</p>
@@ -548,14 +545,7 @@ optimizing performance, and delivering user-friendly web applications powered by
     </div>
   </footer>
 
-
-
-
-
-
-  </div>
-  </div>
-  <script src=""></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
